@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
         viewModel=ViewModelProviders.of(this).get(ListViewModel.class);//give exact same instance of view when activity re created
-
+        viewModel.refresh();
         movieList.setLayoutManager(new LinearLayoutManager(this));
         movieList.setAdapter(adapter);
 

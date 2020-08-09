@@ -21,13 +21,15 @@ public class ListViewModel extends ViewModel {
 
     private void fetchData() {
         MovieModel movie1=new MovieModel("The Godfather",8.80);
-        MovieModel movie2=new MovieModel("The Shawshank Redemption",8.20);
+        MovieModel movie2=new MovieModel("The Shawshank ",8.20);
         MovieModel movie3=new MovieModel("Parasite",8.80);
+        MovieModel movie4=new MovieModel("prison break",8.20);
 
         List<MovieModel> list=new ArrayList<>();
         list.add(movie1);
         list.add(movie2);
         list.add(movie3);
+        list.add(movie4);
 
         movies.setValue(list);
         movieLoadError.setValue(false);
