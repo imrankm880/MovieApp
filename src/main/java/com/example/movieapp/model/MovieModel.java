@@ -1,8 +1,12 @@
 package com.example.movieapp.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class MovieModel {
+    @SerializedName("title")
     private String title;
-    private double voteScore;
+//    @SerializedName("year")
+   private double voteScore;
 //    private String date;
 
 
@@ -20,7 +24,7 @@ public class MovieModel {
     public void setTitle(String title) {
         this.title = title;
     }
-
+//
     public double getVoteScore() {
         return voteScore;
     }

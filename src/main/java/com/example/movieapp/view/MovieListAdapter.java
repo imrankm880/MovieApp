@@ -67,7 +67,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
 
         void bind(MovieModel movie) {
         movieName.setText(movie.getTitle());
-        movieRating.setText(String.valueOf(movie.getVoteScore()));
+//        movieRating.setText(String.valueOf(movie.getVoteScore()));
 
         }
 
